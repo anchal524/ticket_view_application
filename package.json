@@ -1,0 +1,25 @@
+{
+  "name": "zendesk_coding_challenge_anchal",
+  "version": "1.0.0",
+  "description": "Ticket viewer application for zendesk coding challenge",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "base-64": "^1.0.0",
+    "blueimp-md5": "^2.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "mongo": "^0.1.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "author": "Anchal Bansal",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}

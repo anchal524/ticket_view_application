@@ -1,0 +1,82 @@
+<main>
+ <form style="margin-top: 50px;">
+    <input type="button" value="Go back!" onclick="history.back()" class="prev-button">
+</form>
+<form >
+    <input type="button" value="Go to home page" onclick="window.location='/tickets'" class="prev-button">
+</form>
+<table class="table-details">
+    <tr>
+        <td class="left-column">
+            Ticket id
+        </td>
+        <td class="right-column">
+            {{{ticket.id}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Status
+        </td>
+        <td class="right-column">
+            {{{ticket.status}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Priority
+        </td>
+        <td class="right-column">
+            {{{ticket.priority}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Ticket creation time
+        </td>
+        <td class="right-column">
+            {{{ticket.created_at}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Last updated at
+        </td>
+        <td class="right-column">
+            {{{ticket.updated_at}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Requester id
+        </td>
+        <td class="right-column">
+            {{{ticket.requester_id}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Submitter id
+        </td>
+        <td class="right-column">
+            {{{ticket.submitter_id}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Ticket Subject
+        </td>
+        <td class="right-column">
+            {{{ticket.raw_subject}}}
+        </td>
+    </tr>
+    <tr>
+        <td class="left-column">
+            Description
+        </td>
+        <td class="right-column">
+            {{{ticket.description}}}
+        </td>
+    </tr>
+    </table>
+</main>

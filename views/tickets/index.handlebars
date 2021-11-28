@@ -1,0 +1,40 @@
+<main>
+    <h1>Ticket List</h1>
+    <h2>Showing {{firstId}}-{{lastId}} tickets of {{ticketsTotalCount}} tickets</h2>
+    <table class="table-list">
+        <tr>
+            <th>
+                Ticket id
+            </th>
+            <th>
+                Ticket status
+            </th>
+            <th>
+                Subject
+            </th>
+        </tr>
+        {{#each ticket}}
+            <tr onclick="window.location='tickets/{{id}}'" class="clickable-row">
+                <td>
+                   {{id}}
+                </td>
+                <td>
+                    {{status}}
+                </td>
+                <td>
+                    {{subject}}
+                </td>
+            </tr>
+        {{/each}}
+        <form action="/tickets?" method="GET">
+            <input type="hidden" name="page[before]" value={{prevPage}}>
+            <input type="hidden" name="page[size]" value={{pageSize}}> 
+            <button type="submit" class="prev-button">Prev</button>
+        </form>
+        <form action="/tickets?" method="GET" class="next-button">
+            <input type="hidden" name="page[after]" value={{nextPage}}>
+            <input type="hidden" name="page[size]" value={{pageSize}}>
+            <button type="submit" class="next-button">Next</button>
+        </form>
+    </table>
+</main>
