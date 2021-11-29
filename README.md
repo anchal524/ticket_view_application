@@ -12,7 +12,7 @@ npm install
 
 ## Export environment variables
 
-You need to export 2 environment variables before running the code or authentication with zendesk API. I tried seeting up the token based authentication but for some reason, API complained that my token is expired or invalid even though I tried to generate the token multiple times. I am resorting to username/password based authentication as a last resort.
+You need to export 2 environment variables before running the code or authentication with zendesk API. I tried setting up the token based authentication but for some reason, API complained that my token is expired or invalid even though I tried to generate the token multiple times. I am resorting to username/password based authentication as a last resort.
 
 ```
 export USERNAME_ZENDESK={your zendesk account username}
